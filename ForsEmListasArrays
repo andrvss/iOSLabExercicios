@@ -1,0 +1,52 @@
+import UIKit
+
+// 1* Exercicio
+// var fruits = ["Banana","Laranja", "Maçã", "Uva" ]
+
+//for fruit in fruits {
+//    if fruit.starts(with: "b") {
+//        print("Essa fruta começa com B: \(fruit)")
+//    } else {
+//        print("Essa fruta NÃO começa com B: \(fruit)")
+//    }
+//}
+
+//2* Exercicio - Tentativa com MAP, para colocar todas os nomes com letra maiúscula.
+//let pessoas = ["Paulo", "Leonardo", "Caio", "Guilherme", "Pedro", "Gustavo"]
+//
+//let nomesMaisculos = pessoas.map {
+//    $0.uppercased()
+//}
+//
+//print(nomesMaisculos)
+
+//3* Tentativa - Colocando todos os nomes com letras maiúsculas, só que usando For e Append.
+//let pessoas = ["Paulo", "Leonardo", "Caio", "Guilherme", "Pedro", "Gustavo"]
+//
+//var nomesMaiusculos: [String] = []
+//
+//for nome in pessoas {
+//    let nomesMaiusculo = nome.uppercased()
+//    
+//    nomesMaiusculos.append(nomesMaiusculo)
+//}
+//
+//print(nomesMaiusculos)
+
+//4* Tentativa - Correção do Professor, utilizando Append para inserir mais um nome.
+//var pessoas = ["Paulo", "Leonardo", "Caio", "Guilherme", "Pedro", "Gustavo"]
+//
+//pessoas.append("Mario")
+//
+//for name in pessoas {
+//    print(name.uppercased())
+//}
+
+// 5* Tentativa - Exercício de elaboração de média numa lista Array.
+let numbers: [Double] = [8, 4, 12, 17, 21, 32]
+
+let calculo = numbers.reduce(0, +)
+
+let calculoMedia = calculo / Double(numbers.count)
+
+print("A média é:", calculoMedia)
